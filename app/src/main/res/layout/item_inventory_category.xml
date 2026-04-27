@@ -1,0 +1,52 @@
+<com.google.android.material.card.MaterialCardView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCategoryIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_image"
+            app:tint="#6200EE"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@id/imgCategoryIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+            
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصور"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+                
+            <TextView
+                android:id="@+id/tvCategoryDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جاري الجرد..."
+                android:textColor="#9E9E9E"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:checked="true"/>
+            
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
